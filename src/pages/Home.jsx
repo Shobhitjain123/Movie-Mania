@@ -21,8 +21,7 @@ function Home() {
 
         try {
             const moviesResult = await searchMovies(searchInput)
-            setMovies(moviesResult)
-            setError(null)
+                setMovies(moviesResult)
         } catch (error) {
             console.log(error);
 
